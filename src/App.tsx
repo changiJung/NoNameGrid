@@ -1,6 +1,7 @@
 import './App.css';
 import './assets/css/Main.css'
 import React from 'react';
+import { GridFooter } from './layout/girdfooter/GridFooter';
 
 function App() {
   return (
@@ -39,6 +40,12 @@ function App() {
 
 
       </header>
+      <GridFooter css={"test"}      
+      page = {1}
+      test = {"1"}
+      
+      
+      ></GridFooter>
     </div>
   );
 }
