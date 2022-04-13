@@ -4,11 +4,8 @@ import { GridFooterPage } from './GridFooterPage';
 
 interface GridFooterInterface {
     css: string,
-    test? : string
-    data?<T>(text : T) : T,
     page : number,
     pages? : number[],
-
 }
 
 

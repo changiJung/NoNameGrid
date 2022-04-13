@@ -7,3 +7,21 @@ text-align: left;
 }
 
 
+.headerTest {
+ 
+    border: solid;
+
+/* 너비 | 스타일 */
+border: 2px dotted;
+
+/* 스타일 | 색 */
+border: outset #f33;
+
+/* 너비 | 스타일 | 색 */
+border: medium dashed red;
+
+/* 전역 값 */
+border: 100%;
+width: fit-content;
+
+}
