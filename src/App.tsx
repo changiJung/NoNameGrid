@@ -9,27 +9,18 @@ function App() {
   return (
     <div className="App">
 
-
-
-
-
       <GridHeader css='headerTest'
-      headerName='헤더부1분'
+        headerName={['헤더1', '헤더2', '헤더3']}
       />
 
       <GridBody
       css='mainTest'
       dataType='body'
+      data = {['test', 'test1', 'test2']}
       />
 
-      
-
-
-
-
-
       <GridFooter css={"test"}      
-      page = {1}            
+        page = {1}            
       ></GridFooter>
     </div>
   );

@@ -1,27 +1,31 @@
 .mainTest{
-display:inline-block;
-transform:translate(-50%,-50%);
-align-items: left;
-align-content: left;
-text-align: left;
+/* display:inline-block; */
+/* transform:translate(-50%,-50%); */
+/* align-items: left; */
+/* align-content: left; */
+/* text-align: left; */
+width: 100vh;
+height: 90vh;
+border: solid;
+    /* 너비 | 스타일 */
 }
 
 
 .headerTest {
  
     border: solid;
+    /* 너비 | 스타일 */
+    border: 2px ;
 
-/* 너비 | 스타일 */
-border: 2px dotted;
+    /* 스타일 | 색 */
+    border: outset #f33;
 
-/* 스타일 | 색 */
-border: outset #f33;
+    /* 너비 | 스타일 | 색 */
+    border: medium solid red;
 
-/* 너비 | 스타일 | 색 */
-border: medium dashed red;
+    /* 전역 값 */
+    width: 100vh;
+    height: 3vh;
 
-/* 전역 값 */
-border: 100%;
-width: fit-content;
 
 }

@@ -4,6 +4,7 @@ import * as React from 'react';
 interface GridBodyInterface {
     css: string,
     dataType : string,
+    data : string[]
 
     
 }
@@ -11,12 +12,22 @@ interface GridBodyInterface {
 // props type 설정
 export function GridBody(props: GridBodyInterface){
 
+
+    const gridArray = props.data;
+
     return(
 
-        <div className={props.css}>
-            {props.dataType}
+        <div style={{display:'flex'}} >
 
-        </div>
+            {gridArray.map(name => (  
+                     <div className={props.css}>
+                     {name}  
+                     </div>   
+                    ))}  
+
+
+
+       </div>
  
     )
 
