@@ -1,27 +1,26 @@
 import './App.css';
 import './assets/css/Main.css'
 import React from 'react';
-import { GridFooter } from './layout/girdfooter/GridFooter';
-import { GridHeader } from './layout/gridheader/GridHeader';
-import { GridBody } from './layout/gridbody/GridBody';
+import { NonameGrid } from "./components/NoNameGrid"
+
+
 
 function App() {
+
+
+  
+
   return (
     <div className="App">
-
-      <GridHeader css='headerTest'
-        headerName={['헤더1', '헤더2', '헤더3']}
+      <NonameGrid       
+        bodyData={['test1', 'test3', 'test4']}
+        bodyType={'body1'}
+        bodyCss={'mainTest'}
+        footerCss={'test'}
+        headerCss={'headerTest'}
+        headerName={['헤더11', '헤더22', '헤더33']}
+        pageNumber={1}      
       />
-
-      <GridBody
-      css='mainTest'
-      dataType='body'
-      data = {['test', 'test1', 'test2']}
-      />
-
-      <GridFooter css={"test"}      
-        page = {1}            
-      ></GridFooter>
     </div>
   );
 }
